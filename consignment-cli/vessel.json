@@ -1,0 +1,7 @@
+{
+  "capacity" : 10,
+  "max_weight" : 1000,
+  "name" : "test",
+  "available" : true,
+  "ower_id" : "111"
+}
