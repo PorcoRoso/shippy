@@ -49,12 +49,18 @@ services:
     depends_on:
       - database
 
+  email-service:
+    build: ./email-service
+    environment:
+      MICRO_REGISTRY: "mdns"
+
   database:
-      image: postgres
-      ports:
-        - 5432:5432
+    image: postgres
+    ports:
+      - 5432:5432
 
   datastore:
-      image: mongo
-      ports:
-        - 27017:27017
+    image: mongo
+    ports:
+      - 27017:27017
+
